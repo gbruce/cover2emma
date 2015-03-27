@@ -1,3 +1,5 @@
+# cover2emma from https://code.google.com/p/cover2emma/
+
 === About ===
 
 It converts the xml output from dotCover (http://www.jetbrains.com/dotcover/) and bullseye (http://www.bullseye.com/) to emma format. This allows the output to be tracked by the emma plugin (https://wiki.jenkins-ci.org/display/JENKINS/Emma+Plugin) for Jenkins (http://jenkins-ci.org) / Hudson (http://java.net/projects/hudson/).

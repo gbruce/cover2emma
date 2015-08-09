@@ -413,6 +413,7 @@ namespace cover2emma
         {
             if (property.Method == null)
             {
+                callback(ToEntry(property));
                 return;
             }
             else

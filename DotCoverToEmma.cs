@@ -411,8 +411,15 @@ namespace cover2emma
 
         private static void ForEachMethod(dotcover.Property property, Action<Entry> callback)
         {
-            foreach (dotcover.Method method in property.Method)
-                ForEachMethod(method, callback, property.Name);
+            if (property.Method == null)
+            {
+                return;
+            }
+            else
+            {
+                foreach (dotcover.Method method in property.Method)
+                    ForEachMethod(method, callback, property.Name);
+            }
         }
 
         private static void ForEachMethod(dotcover.OwnCoverage ownCoverage, Action<Entry> callback, String parent)
